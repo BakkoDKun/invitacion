@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Invitación</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-top: 20px;
-    }
-    audio {
-      margin-top: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Invitación</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+  }
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Botones invisibles */
+  .button {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
 
-  <h1>¡Estás invitado!</h1>
-
-  <!-- Imagen de la invitación -->
+<div class="container">
   <img src="invitacion.png" alt="Invitación">
 
-  <!-- Reproductor de música -->
-  <audio controls autoplay loop>
-    <source src="musica.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio.
-  </audio>
+  <!-- Boton 1 -->
+  <div class="button" style="left: 288px; top: 7121px; width: 781px; height: 122px;"
+       onclick="window.open('https://maps.app.goo.gl/YnKUCjNY7t3Sw4wm9','_blank')"></div>
+
+  <!-- Boton 2 -->
+  <div class="button" style="left: 260px; top: 13598px; width: 811px; height: 118px;"
+       onclick="window.open('https://example2.com','_blank')"></div>
+
+  <!-- Boton 3 -->
+  <div class="button" style="left: 308px; top: 12985px; width: 798px; height: 210px;"
+       onclick="window.open('https://example3.com','_blank')"></div>
+
+  <!-- Boton 4 -->
+  <div class="button" style="left: 307px; top: 7862px; width: 764px; height: 126px;"
+       onclick="alert('Boton 4 presionado')"></div>
+</div>
+
+<!-- Música invisible -->
+<audio autoplay loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
 
 </body>
 </html>

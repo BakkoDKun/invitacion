@@ -7,13 +7,15 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background: #f7f7f7;
+      background-color: #f0f0f0;
+      margin: 0;
       padding: 20px;
     }
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: none;
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       margin-top: 20px;
     }
     audio {
@@ -23,10 +25,10 @@
 </head>
 <body>
 
-  <h1>Tu Invitación</h1>
+  <h1>¡Estás invitado!</h1>
 
-  <!-- PDF embebido -->
-  <iframe src="invitacion.pdf"></iframe>
+  <!-- Imagen de la invitación -->
+  <img src="invitacion.png" alt="Invitación">
 
   <!-- Reproductor de música -->
   <audio controls autoplay loop>
@@ -36,3 +38,5 @@
 
 </body>
 </html>
+
+

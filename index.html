@@ -8,15 +8,16 @@
     margin: 0;
     padding: 0;
     background: black;
-    overflow: hidden;
+    overflow: auto; /* Permite scroll vertical */
   }
   .container {
     position: relative;
     display: inline-block;
   }
   .container img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    width: 100%; /* Ajusta al ancho de la pantalla */
+    height: auto; /* Mantiene proporciones */
   }
   /* Botones invisibles */
   .button {
@@ -33,7 +34,7 @@
 
   <!-- Boton 1 -->
   <div class="button" style="left: 288px; top: 7121px; width: 781px; height: 122px;"
-       onclick="window.open('https://maps.app.goo.gl/YnKUCjNY7t3Sw4wm9','_blank')"></div>
+       onclick="window.open('https://example1.com','_blank')"></div>
 
   <!-- Boton 2 -->
   <div class="button" style="left: 260px; top: 13598px; width: 811px; height: 118px;"
@@ -55,5 +56,6 @@
 
 </body>
 </html>
+
 
 
